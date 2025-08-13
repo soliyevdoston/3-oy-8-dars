@@ -27,6 +27,18 @@ function toUpperNames(names) {
 const names = ["ali", "vali", "hasan"];
 console.log(toUpperNames(["ali", "vali", "hasan"])); // ["ALI", "VALI", "HASAN"]
 
+// 3. Massivda nechta musbat son borligini toping
+function countPositive(numbers) {
+  return numbers.filter((num) => {
+    return num > 0;
+  }).length;
+
+  // 1. filter() yordamida musbat sonlargina ajratib oling
+  // 2. filter() natijasining uzunligini qaytaring
+}
+const numbers = [1, -3, 4, 0, 6];
+console.log(countPositive([1, -3, 4, 0, 6])); // 3
+
 // 4. Stringdagi bo‘sh joylarni olib tashlang
 function removeSpaces(str) {
   return str.trim().replaceAll(" ", "");
@@ -156,7 +168,7 @@ console.log(flattenArray([1, [2, 3], [4, 5]])); // [1,2,3,4,5]
 
 // 17. Stringdagi raqamlarni sonlarga aylantiring
 function extractNumbers(str) {
-  // Muammmooooooooooooo;
+  Muammmooooooooooooo;
   // 1. split('') bilan harflarga bo‘ling
   // 2. filter() bilan faqat raqamlar ajrating
   // 3. map() bilan ularni Number ga aylantiring
