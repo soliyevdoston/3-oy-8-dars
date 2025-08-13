@@ -16,17 +16,16 @@ function capitalizeWords(str) {
 str = "salom dunyo";
 console.log(capitalizeWords("salom dunyo")); // "Salom Dunyo"
 
-// 3. Massivda nechta musbat son borligini toping
-function countPositive(numbers) {
-  return numbers.filter((num) => {
-    return num > 0;
-  }).length;
-
-  // 1. filter() yordamida musbat sonlargina ajratib oling
-  // 2. filter() natijasining uzunligini qaytaring
+// 2. Massivdagi har bir ismni katta harfga o‘tkazing
+function toUpperNames(names) {
+  return names.map((name) => {
+    return name.toUpperCase();
+  });
+  // 1. map() yordamida har bir ismdan yangi massiv yaratamiz
+  // 2. Har bir ismni toUpperCase() bilan yozamiz
 }
-const numbers = [1, -3, 4, 0, 6];
-console.log(countPositive([1, -3, 4, 0, 6])); // 3
+const names = ["ali", "vali", "hasan"];
+console.log(toUpperNames(["ali", "vali", "hasan"])); // ["ALI", "VALI", "HASAN"]
 
 // 4. Stringdagi bo‘sh joylarni olib tashlang
 function removeSpaces(str) {
