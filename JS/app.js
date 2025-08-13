@@ -16,17 +16,6 @@ function capitalizeWords(str) {
 str = "salom dunyo";
 console.log(capitalizeWords("salom dunyo")); // "Salom Dunyo"
 
-// // 2. Massivdagi har bir ismni katta harfga o‘tkazing
-// function toUpperNames(names) {
-//   return names.map((name) => {
-//     return name.toUpperCase();
-//   });
-//   // 1. map() yordamida har bir ismdan yangi massiv yaratamiz
-//   // 2. Har bir ismni toUpperCase() bilan yozamiz
-// }
-// const names = ["ali", "vali", "hasan"];
-// console.log(toUpperNames(["ali", "vali", "hasan"])); // ["ALI", "VALI", "HASAN"]
-
 // 3. Massivda nechta musbat son borligini toping
 function countPositive(numbers) {
   return numbers.filter((num) => {
